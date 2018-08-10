@@ -12,7 +12,7 @@ class Artist
     if @@all.detect {|artist| artist.name == name} != nil
       return @@all.detect {|artist| artist.name == name}
     else
-      self.new(name)
+      return self.new(name)
     end
   end
 
