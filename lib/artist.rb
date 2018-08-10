@@ -8,6 +8,10 @@ class Artist
     @@all << self
   end
 
+  def save
+    @@all << self
+  end
+
   def self.find_or_create_by_name(name)
     if @@all.detect {|artist| artist.name == name} != nil
       return @@all.detect {|artist| artist.name == name}
