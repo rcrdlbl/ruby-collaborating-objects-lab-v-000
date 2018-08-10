@@ -11,7 +11,7 @@ class Song
     song.artist_name = split_filename[0]
   end
 
-  def artist_name(name)
+  def artist_name=(name)
 
   end
 
