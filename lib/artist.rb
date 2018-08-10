@@ -9,6 +9,10 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    @@all.each do |artist|
+    
+  end
+
+  def add_song(song)
+    @songs << song
   end
 end
