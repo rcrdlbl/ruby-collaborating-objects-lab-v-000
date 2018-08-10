@@ -16,6 +16,7 @@ class Artist
     @songs.each do |song|
       puts song
     end
+  end
 
   def self.find_or_create_by_name(name)
     if @@all.detect {|artist| artist.name == name} != nil
